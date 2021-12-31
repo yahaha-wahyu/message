@@ -1,0 +1,100 @@
+<html>
+    <head>
+        <title>Formulir Data</title>
+        <style>
+            *
+            {
+                font-family: system-ui;
+            }
+            body
+            {
+                background: rgb(202, 236, 252);
+                width: 100%;
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+            }
+            .container
+            {
+                background: #fff;
+                border: none;
+                border-radius: 50px;
+                box-shadow:10px 10px 50px grey;  
+            }
+            .box
+            {
+                margin: 20px;
+                padding-top: 50px;
+                padding-bottom: 50px;
+                background: rgb(202, 236, 252);
+                width: 500px;
+                border: 5px rgb(2, 88, 128) dotted;
+                border-width: 2px;
+                border-radius: 50px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+            }
+            .hea
+            {
+              position: absolute;
+              /* background: #000; */
+            }
+            form
+            {
+                align-items: center;
+                justify-content: center;
+                display: flex;
+                flex-direction: column;
+            }
+            input
+            {
+                outline: none;
+                margin: 8px;
+                width: 350px;
+                height: 30px;
+                border: none;
+                border-radius: 50px;
+                padding-left: 15px;
+                cursor: pointer;
+            }
+            input:nth-child(5)
+            {
+                width: 350px;
+                height: 60px;
+            }
+            input:nth-child(7)
+            {
+                padding: 0;
+                width: 150px;
+                font-size: 20px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background: darkblue;
+                color: #fff;
+                cursor: pointer;
+            }
+        </style>
+    </head>
+    <body>
+        
+        <script type="text/javascript">var submitted=false;</script>
+        <iframe name="hidden_iframe" id="hidden_iframe" style="display: none" onload="if(submitted){
+            window.location='kedua.html';}"></iframe>
+        <div class="container">
+            <div class="box">
+                <h1>Isi Disini</h1>
+              
+                <form action="https://docs.google.com/forms/u/1/d/e/1FAIpQLSda4cICww4QjKbuIjFEugbDyTatTHO9y_-XSjxNna15S6drMw/formResponse" target="hidden_iframe" onsubmit="submitted=true" method="POST">
+                    
+                    <input type="text" placeholder="Tuliskan Pesan Anda Disini" name="entry.1221745940"><br>
+                    <input type="submit" value="Submit"><br>
+                </form>
+            </div>
+        </div>
+    </body>
+</html>
